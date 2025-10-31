@@ -1,0 +1,60 @@
+{
+  "menus": [
+    {
+      "menuID": 1,
+      "Name": "Work Overview",
+      "icon": "sap-icon://complete",
+      "des": "Task list",
+      "number": "14",
+      "route": ""
+    },
+    {
+      "menuID": 2,
+      "Name": "Xây dựng tờ trình đề xuất mua sắm",
+      "icon": "sap-icon://order-status",
+      "des": "Tạo tờ trình đề xuất",
+      "number": "",
+      "route": "CentralizedPurchasing"
+    },
+    {
+      "menuID": 3,
+      "Name": "Tạo gói mua sắm",
+      "icon": "sap-icon://order-status",
+      "des": "Khởi tạo gói mua sắm",
+      "number": "",
+      "route": ""
+    },
+    {
+      "menuID": 4,
+      "Name": "Xây dựng gói mua sắm",
+      "icon": "sap-icon://order-status",
+      "des": "Xây dựng",
+      "number": "",
+      "route": ""
+    },
+    {
+      "menuID": 5,
+      "Name": "Chấm điểm",
+      "icon": "sap-icon://order-status",
+      "des": "Chấm điểm và lựa chọn",
+      "number": "",
+      "route": ""
+    },
+    {
+      "menuID": 6,
+      "Name": "Hợp đồng",
+      "icon": "sap-icon://order-status",
+      "des": "Quản lý hợp đồng",
+      "number": "",
+      "route": ""
+    },
+    {
+      "menuID": 7,
+      "Name": "Quản lý NCC",
+      "icon": "sap-icon://order-status",
+      "des": "Management Vendors",
+      "number": "",
+      "route": ""
+    }
+  ]
+}

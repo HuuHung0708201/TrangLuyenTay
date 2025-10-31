@@ -1,0 +1,53 @@
+{
+  "queries": [
+    {
+      "name": "B1: Phê duyệt tờ trình về nguyên tắc nhu cầu mua sắm",
+      "icon": "sap-icon://folder-blank",
+      "nodes": [
+        { "name": "Save draft", "icon": "sap-icon://folder" },
+        { "name": "Khởi tạo tờ trình về nguyên tắc nhu cầu mua sắm", "icon": "sap-icon://folder" },
+        { "name": "Phê duyệt tờ trình về nguyên tắc nhu cầu mua sắm", "icon": "sap-icon://folder" }
+      ]
+    },
+    {
+      "name": "B2: Phê duyệt Đầu bài chi tiết",
+      "icon": "sap-icon://folder-blank",
+      "nodes": [
+        { "name": "Xây dựng đầu bài chi tiết", "icon": "sap-icon://folder" },
+        { "name": "Phê duyệt đầu bài chi tiết", "icon": "sap-icon://folder" }
+      ]
+    },
+    {
+      "name": "B3: Phê duyệt KQ chấm điểm NCC và PA đàm phán",
+      "icon": "sap-icon://folder-blank",
+      "nodes": [
+        { "name": "Chấm điểm NCC", "icon": "sap-icon://folder" },
+        { "name": "Phê duyệt KQ chấm điểm NCC và phương án đàm phán", "icon": "sap-icon://folder" }
+      ]
+    },
+    {
+      "name": "B4: Phê duyệt NCC, giá, các điều kiện, điều khoản",
+      "icon": "sap-icon://folder-blank",
+      "nodes": [
+        { "name": "Trình NCC, giá và điều kiện, điều khoản với NCC", "icon": "sap-icon://folder" },
+        { "name": "Phê duyệt NCC, giá và các điều kiện, điều khoản", "icon": "sap-icon://folder" }
+      ]
+    },
+    {
+      "name": "B5: Ký hợp đồng",
+      "icon": "sap-icon://folder-blank",
+      "nodes": [
+        { "name": "Khởi tạo hợp đồng", "icon": "sap-icon://folder" },
+        { "name": "Phê duyệt và ký hợp đồng", "icon": "sap-icon://folder" }
+      ]
+    },
+    {
+      "name": "Đăng ký nhà cung cấp",
+      "icon": "sap-icon://folder-blank",
+      "nodes": [
+        { "name": "Khởi tạo đăng ký NCC", "icon": "sap-icon://folder" },
+        { "name": "Phê duyệt đăng ký NCC", "icon": "sap-icon://folder" }
+      ]
+    }
+  ]
+}

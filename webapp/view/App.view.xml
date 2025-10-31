@@ -1,0 +1,44 @@
+<mvc:View controllerName="base.controller.App"
+    displayBlock="true"
+	xmlns:tnt="sap.tnt"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+    <VBox fitContainer="true" height="100%">
+        <!-- <ScrollContainer vertical="true" height="100%"> -->
+            <tnt:ToolHeader id="shellLikeToolHeader" class="headerBorderBottom">
+                <Button icon="sap-icon://nav-back" type="Transparent" tooltip="Back" press="onNavBack"/>
+                <Image src="images/logo.jpg" decorative="false" press="onLogoPressed" tooltip="SAP Logo" width="136px" height="79px">
+                    <layoutData>
+                        <OverflowToolbarLayoutData priority="NeverOverflow"/>
+                    </layoutData>
+                </Image>
+                <!-- Menu start -->
+                <Button id="appTitleButton"
+                text="Home"
+                type="Transparent"
+                iconFirst="false"
+                icon="sap-icon://slim-arrow-down"
+                press="onAppTitlePressed">
+                    <layoutData>
+                        <OverflowToolbarLayoutData priority="NeverOverflow"/>
+                    </layoutData>
+                </Button>
+                <!-- Menu end -->
+                <ToolbarSpacer />
+                <SearchField width="288px" id="searchField">
+                    <layoutData>
+                        <OverflowToolbarLayoutData priority="Low" group="1"/>
+                    </layoutData>
+                </SearchField>
+                <Button visible="false" icon="sap-icon://search" type="Transparent" id="searchButton" tooltip="Search"/>
+                <Avatar src="images/avatar.jpg" displaySize="XS" press=".onAvatarPressed" tooltip="Profile">
+                    <layoutData>
+                        <OverflowToolbarLayoutData priority="NeverOverflow"/>
+                    </layoutData>
+                </Avatar>
+            </tnt:ToolHeader>
+            <!-- Chuyển trang động -->
+            <App id="appContent" width="100%" height="100%" />
+        <!-- </ScrollContainer> -->
+    </VBox>
+</mvc:View>

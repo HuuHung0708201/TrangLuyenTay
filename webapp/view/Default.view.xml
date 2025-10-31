@@ -1,0 +1,7 @@
+<mvc:View
+  controllerName="base.controller.Default"
+  xmlns:mvc="sap.ui.core.mvc"
+  xmlns="sap.m">
+  <Page id="dynamicDetailPage" title="Chọn các yêu cầu tương ứng">
+  </Page>
+</mvc:View>

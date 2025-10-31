@@ -1,0 +1,126 @@
+<mvc:View
+		 controllerName="base.controller.Page02"
+		height="100%"
+		xmlns:mvc="sap.ui.core.mvc"
+		xmlns:core="sap.ui.core"
+		xmlns="sap.m"
+		xmlns:f="sap.f"
+		xmlns:fb="sap.ui.comp.filterbar"
+		xmlns:svm="sap.ui.comp.smartvariants">
+    <f:DynamicPage headerExpanded="{/headerExpanded}">
+        <f:title>
+            <f:DynamicPageTitle>
+                <f:heading>
+                    <Title text="Save draft" level="H2"/>
+                </f:heading>
+            </f:DynamicPageTitle>
+        </f:title>
+        <f:header>
+            <f:DynamicPageHeader>
+                <f:content>
+                    <fb:FilterBar id="filterbar" persistencyKey="myPersKey" useToolbar="false" search=".onSearch" filterChange=".onFilterChange" afterVariantLoad=".onAfterVariantLoad" searchButtonText="Search">
+                        <fb:filterGroupItems>
+                            <fb:FilterGroupItem name="Subject" label="Subject" groupName="Group1" visibleInFilterBar="true">
+                                <fb:control>
+                                    <Input
+                                        name="Subject"
+                                        liveChange=".onInputChange"
+                                        items="{
+												path: '/ProductNames',
+												templateShareable: true
+											}"
+                                        placeholder=""
+                                    />
+                                </fb:control>
+                            </fb:FilterGroupItem>
+                            <fb:FilterGroupItem name="From" label="From" groupName="Group1" visibleInFilterBar="true">
+                                <fb:control>
+                                    <MultiComboBox
+											name="From"
+											selectionChange=".onSelectionChange"
+											items="{
+												path: '/ProductNames',
+												templateShareable: true
+											}"
+										>
+                                        <core:Item key="{key}" text="{name}"/>
+                                    </MultiComboBox>
+                                </fb:control>
+                            </fb:FilterGroupItem>
+                            <fb:FilterGroupItem name="Sent On" label="Sent On" groupName="Group1" visibleInFilterBar="true">
+                                <fb:control>
+                                    <DatePicker
+                                        name="Sent On"
+                                        change=".onDateChange"
+                                        placeholder="e.g. 31/12/2025"
+                                        displayFormat="dd/MM/yyyy"
+                                        items="{
+												path: '/ProductCategories',
+												templateShareable: true
+											}"
+                                    />
+                                </fb:control>
+                            </fb:FilterGroupItem>
+                            <fb:FilterGroupItem name="Priority" label="Priority" groupName="Group1" visibleInFilterBar="true">
+                                <fb:control>
+                                    <MultiComboBox
+											name="Priority"
+											selectionChange=".onSelectionChange"
+											items="{
+												path: '/ProductCategories',
+												templateShareable: true
+											}"
+										>
+                                        <core:Item key="{key}" text="{name}"/>
+                                    </MultiComboBox>
+                                </fb:control>
+                            </fb:FilterGroupItem>
+                            <fb:FilterGroupItem name="Due date" label="Due date" groupName="Group1" visibleInFilterBar="true">
+                                <fb:control>
+                                    <DatePicker
+                                        name="Due date"
+                                        change=".onDateChange"
+                                        placeholder="e.g. 31/12/2025"
+                                        displayFormat="dd/MM/yyyy"
+                                        items="{
+												path: '/ProductCategories',
+												templateShareable: true
+											}"
+                                    />
+                                </fb:control>
+                            </fb:FilterGroupItem>
+                            <fb:FilterGroupItem name="Satus" label="Satus" groupName="Group1" visibleInFilterBar="true">
+                                <fb:control>
+                                    <MultiComboBox
+											name="Satus"
+											selectionChange=".onSelectionChange"
+											items="{
+												path: '/ProductSuppliers',
+												templateShareable: true
+											}"
+										>
+                                        <core:Item key="{key}" text="{name}"/>
+                                    </MultiComboBox>
+                                </fb:control>
+                            </fb:FilterGroupItem>
+                            <fb:FilterGroupItem name="Forwarded By" label="Forwarded By" groupName="Group1" visibleInFilterBar="true">
+                                <fb:control>
+                                    <MultiComboBox
+											name="Forwarded By"
+											selectionChange=".onSelectionChange"
+											items="{
+												path: '/ProductSuppliers',
+												templateShareable: true
+											}"
+										>
+                                        <core:Item key="{key}" text="{name}"/>
+                                    </MultiComboBox>
+                                </fb:control>
+                            </fb:FilterGroupItem>
+                        </fb:filterGroupItems>
+                    </fb:FilterBar>
+                </f:content>
+            </f:DynamicPageHeader>
+        </f:header>
+    </f:DynamicPage>
+</mvc:View>

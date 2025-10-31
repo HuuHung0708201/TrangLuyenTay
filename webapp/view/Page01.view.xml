@@ -1,0 +1,51 @@
+<mvc:View
+    controllerName="base.controller.Page01"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+    <SplitApp
+		id="SplitAppDemo"
+		initialDetail="detail"
+		initialMaster="master">
+        <!-- Phần detail có thể bị thay đổi động -->
+        <!-- <detailPages>
+            <Page id="detail" title="Detail mặc định" backgroundDesign="Solid">
+                <Label text="Chọn 1 mục ở bên trái để xem chi tiết" />
+            </Page>
+        </detailPages> -->
+        <detailPages class="customdetailPages">
+            <mvc:XMLView viewName="base.view.Default" />
+        </detailPages>
+        <!-- Phần này cố định nhé -->
+        <masterPages>
+            <VBox width="100%" height="100%" fitContainer="true">
+                <Title text="Active queries" level="H3" class="customTextActive"/>
+                <VBox width="100%" height="100%">
+                    <ScrollContainer
+                        height="100%"
+                        width="100%"
+                        vertical="true"
+                        focusable="false">
+                        <Tree
+                            id="queryTree"
+                            class="noToggleIcon"
+                            items="{
+                            path: '/queries',
+                            parameters: {
+                                arrayNames: ['nodes']
+                            }
+                            }"
+                            mode="None"
+                            toggleOpenState="onToggleOpenState"
+                            height="auto">
+                            <StandardTreeItem
+                                title="{name}"
+                                press=".onTreeItemPress" 
+                                icon="{icon}"
+                                type="Active" />
+                        </Tree>
+                    </ScrollContainer>
+                </VBox>
+            </VBox>
+        </masterPages>
+    </SplitApp>
+</mvc:View>

@@ -1,0 +1,110 @@
+/* Enter your custom styles here */
+
+.gradient-bg {
+  background: linear-gradient(to right, #015daa 0%, #017097 50%, #00b056 100%);
+  padding: 24px 24px;
+}
+
+.whiteText {
+  color: #fff;
+}
+
+.fontSize20 {
+  font-size: 20px;
+}
+
+.marginBottom18 {
+  margin-bottom: 18px;
+  display: block;
+}
+
+.customGridList .gridItem {
+  cursor: pointer;
+  min-height: 170px;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+.size24 {
+  font-size: 32px;
+  line-height: 32px;
+  color: #5a7da0 !important;
+}
+
+/* Test */
+/* Font Name */
+.customTitle {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.2rem; /* đảm bảo wrap Name đẹp */
+  text-overflow: ellipsis;
+  color: #1d2d3e !important;
+}
+
+/* Khoảng cách đều từ viền */
+.customGridList .sapUiSmallMargin,
+.customGridList .sapUiSmallMarginBegin {
+  margin: 0.25rem;
+}
+
+.LabelText {
+  font-size: 14px;
+  color: #6b6b82 !important;
+}
+
+.LabelHBoxNumber {
+  font-size: 34px;
+  color: #000;
+  margin-left: 6px;
+  margin-top: 4px;
+}
+
+.headerBorderBottom {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1) !important;
+}
+
+.customTextActive {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 18px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1) !important;
+  display: block;
+}
+
+.noToggleIcon .sapMTreeItemBase {
+  font-size: 14px !important;
+}
+
+/* Ẩn tất cả icon expand/collapse trong toàn bộ Tree */
+.noToggleIcon [id*="expander"] {
+  display: none !important;
+}
+
+.treeLevel-1 {
+  padding-left: 42px !important;
+}
+
+.treeLevel-0 {
+  padding-left: 28px !important;
+}
+
+.sapMSplitContainerMaster {
+  width: 27rem;
+  margin-right: 8px;
+}
+
+/* Khi click vào */
+.treeItemSelected {
+  background-color: #e0f3ff !important;
+  border-bottom: 1px solid #0070f2 !important;
+  transition: background-color 0.2s ease;
+}
+
+div#__xmlview1--SplitAppDemo-Detail {
+  border-left: 1px solid #ccc;
+}
+
+div#__title2 {
+  padding-left: 12px;
+}
